@@ -1,0 +1,271 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gotham HTF Book";
+  font-size: 14px;
+  line-height: 1;
+  color: #000000;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1230px;
+  }
+}
+
+/* banner */
+.banner {
+  position: relative;
+}
+
+.banner__title {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  font-family: "Gotham HTF";
+  font-size: 70px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+/* menu */
+.menu > ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+}
+
+.menu > ul > li {
+  margin-bottom: 36px;
+}
+
+.menu > ul > li > a {
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+
+.menu > ul > li > a:hover {
+  font-weight: bold;
+}
+
+/* post */
+.post {
+  display: flex;
+}
+
+.post__item {
+  position: relative;
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+
+.post__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Gotham HTF";
+  font-size: 50px;
+  text-align: center;
+}
+
+.post__title span {
+  font-size: 30px;
+}
+
+/* tag */
+.tag {
+  text-align: center;
+}
+.tag .tag__content {
+  text-transform: uppercase;
+  color: #000000;
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+/* gallery */
+.gallery {
+  display: flex;
+}
+
+.gallery .gallery__item {
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+
+/* contact */
+.contact {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .contact__item {
+  max-width: 50%;
+  flex: 0 0 50%;
+} */
+.contact__title {
+  font-size: 18px;
+  font-family: "Gotham HTF";
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* form-search */
+.form-search .input-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-search .input-group .form-control {
+  width: 486px;
+  height: 48px;
+  border: 1px solid #000000;
+}
+
+.form-search .input-group button {
+  background-color: #000000;
+  padding: 0 18px;
+  margin-left: 5px;
+  height: 48px;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Gotham HTF";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* social */
+.social {
+  margin-top: 30px;
+}
+
+.social > ul {
+  display: flex;
+}
+
+.social > ul > li {
+  margin-right: 30px;
+}
+
+.social > ul > li > a {
+  display: block;
+}
+
+.social > ul > li > a img {
+  width: 28px;
+  height: 28px;
+}
+
+/* customer-care */
+.customer-care > ul > li {
+  margin-bottom: 10px;
+}
+
+.customer-care > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s;
+}
+.customer-care > ul > li > a:hover {
+  font-weight: bold;
+}
+
+/* footer */
+.footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.about-us > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us > ul > li {
+  padding: 0 10px;
+  border-right: 1px solid;
+}
+
+.about-us > ul > li:last-child {
+  border: none;
+}
+
+.about-us > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 11px;
+  transition: all 0.2s;
+}
+
+.about-us > ul > li > a:hover {
+  font-weight: bold;
+}
